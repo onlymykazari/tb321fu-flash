@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<data>
+  <read SECTOR_SIZE_IN_BYTES="4096" filename="chk_xbl_b.bin" num_partition_sectors="1" physical_partition_number="2" start_sector="6"/>
+  <read SECTOR_SIZE_IN_BYTES="4096" filename="chk_abl_b.bin" num_partition_sectors="1" physical_partition_number="4" start_sector="437686"/>
+  <read SECTOR_SIZE_IN_BYTES="4096" filename="chk_boot_b.bin" num_partition_sectors="1" physical_partition_number="4" start_sector="454454"/>
+  <read SECTOR_SIZE_IN_BYTES="4096" filename="chk_xbl_a.bin" num_partition_sectors="1" physical_partition_number="1" start_sector="6"/>
+</data>

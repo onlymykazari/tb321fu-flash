@@ -1,0 +1,33 @@
+# Binary assets live in the private backup (see ASSETS.md), not in git
+*.7z
+*.zip
+*.apk
+*.img
+*.simg
+*.simg.part*
+*.elf
+*.melf
+*.mbn
+*.fv
+*.dll
+*.exe
+*.ocx
+*.hlp
+*.cnt
+*.tlb
+*.log
+*.bin
+# ...except the device partition-table dumps: tiny, device-specific, referenced by the runbook
+!_work/gpt_primary.bin
+!_work/gpt_backup.bin
+!_work/new_primary.bin
+!_work/new_backup.bin
+
+# 9008 session output
+_work/qfil/tool/readback/
+_work/qfil/tool/port_trace.txt
+
+# Separate git checkouts that live next to this workspace (see README)
+/armada-tb321fu/
+/tb321fu-android-armada-dualboot/
+/tb321fu-vintf-vndk-fix/

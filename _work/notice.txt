@@ -1,0 +1,15 @@
+1.确认驱动：已按照知识库-183001，安装过驱动。
+2.刷机模式：设备关机状态下，按住音量+键同时插入USB线。《此型号需使用长边接口进行刷机》
+3.确认端口号：打开设备管理器，查看9008端口的端口号，知识库-183143。
+4.输入端口号：点击确认按钮，在窗口按提示输入端口号。
+5.注意：开始刷机没有显示成功或者失败时，不可断开设备连接！！！！！
+本9008刷机包含有`Resign`标签的所有版本都可以锁回Bootloader. 本刷机包采用国际版原9008刷机包+解密+刷机脚本格式的方式,不会修改SN! 
+
+包括以下版本:
+
+1. 改地区_Resign文件: 只修改了vendor_boot和重签名,无Root,可锁回BL
+2. 改地区_KerneSU_Next_Resign文件: 修改了vendor_boot和重签名,内置KerneSU_Next,可锁回BL
+3. 改地区_SukiSU_Ultra_LKM_Resign文件: 修改了vendor_boot和重签名,内置SukiSU_Ultra_LKM,可锁回BL
+4. 改地区_SukiSU_Ultra_GKI_Resign文件: 修改了vendor_boot和重签名,内置SukiSU_Ultra_GKI,可锁回BL
+
+默认刷入的是`改地区_SukiSU_Ultra_GKI_Resign文件`,重启到9008后,点击`flash.bat`刷入即可,不影响BL锁状态,回滚值为**1775347200**,请注意自己回滚值是否高于这个版本.
